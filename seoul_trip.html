@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul 5.27 - 5.31 女子力行程</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #fcf8f8;
+        }
+        .day-card {
+            transition: transform 0.3s ease;
+        }
+        .day-card:hover {
+            transform: translateY(-5px);
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -10px;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            background: #ff85a1;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #ff85a1, #ffafbd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* 列印優化樣式 */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background-color: white !important;
+                padding: 0;
+            }
+            .day-card {
+                box-shadow: none !important;
+                border: 1px solid #eee !important;
+                break-inside: avoid;
+            }
+            header {
+                position: static !important;
+            }
+            main {
+                padding: 0 !important;
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold gradient-text">Seoul Trip ✨</h1>
+            <div class="text-sm font-medium text-gray-500">25y+ Female Only</div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-8">
+        
+        <!-- Summary Section -->
+        <div class="bg-white rounded-3xl p-6 mb-10 shadow-lg border-l-8 border-pink-400">
+            <h2 class="text-xl font-bold mb-4"><i class="fa-solid fa-plane-arrival mr-2 text-pink-500"></i> 行前重點</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="p-3 bg-pink-50 rounded-xl">
+                    <p class="text-xs text-pink-600">氣候</p>
+                    <p class="font-bold">15-25°C</p>
+                </div>
+                <div class="p-3 bg-pink-50 rounded-xl">
+                    <p class="text-xs text-pink-600">穿搭</p>
+                    <p class="font-bold">洋裝+薄外</p>
+                </div>
+                <div class="p-3 bg-pink-50 rounded-xl">
+                    <p class="text-xs text-pink-600">導航</p>
+                    <p class="font-bold">Naver Map</p>
+                </div>
+                <div class="p-3 bg-pink-50 rounded-xl">
+                    <p class="text-xs text-pink-600">熱門</p>
+                    <p class="font-bold">需提早預約</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline Section -->
+        <div class="space-y-12">
+
+            <!-- 5/26 Day 0 -->
+            <section class="relative border-l-2 border-pink-100 pl-8 pb-4">
+                <div class="timeline-dot"></div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">5/26 (二)</span>
+                    <h3 class="text-lg font-bold text-gray-600">抵達首爾</h3>
+                </div>
+                <div class="bg-white day-card p-5 rounded-2xl shadow-md">
+                    <p class="text-gray-600">🌙 晚上抵達仁川機場。建議搭乘機場巴士直接前往飯店辦理入住。</p>
+                    <div class="mt-3 text-pink-500 text-sm font-medium">📍 晚餐推薦：橋村炸雞 (KyoChon) 或一隻雞</div>
+                </div>
+            </section>
+
+            <!-- 5/27 Day 1 -->
+            <section class="relative border-l-2 border-pink-100 pl-8 pb-4">
+                <div class="timeline-dot"></div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">5/27 (三)</span>
+                    <h3 class="text-lg font-bold">潮流聖水洞 · 最時髦的一天</h3>
+                </div>
+                <div class="bg-white day-card p-5 rounded-2xl shadow-md">
+                    <ul class="space-y-4">
+                        <li class="flex gap-3">
+                            <span class="text-pink-400 mt-1"><i class="fa-solid fa-camera"></i></span>
+                            <div>
+                                <p class="font-bold">Dior 聖水概念店</p>
+                                <p class="text-sm text-gray-500">外牆是必拍景點，建議趁早去避開人潮。</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3 border-t pt-4">
+                            <span class="text-pink-400 mt-1"><i class="fa-solid fa-bag-shopping"></i></span>
+                            <div>
+                                <p class="font-bold">聖水商圈大掃貨</p>
+                                <p class="text-sm text-gray-500">Tamburins 香氛、Matin Kim、Stand Oil 必逛。</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3 border-t pt-4">
+                            <span class="text-pink-400 mt-1"><i class="fa-solid fa-utensils"></i></span>
+                            <div>
+                                <p class="font-bold">Cafe Onion / 祖傳馬鈴薯排骨湯</p>
+                                <p class="text-sm text-gray-500">品嚐聖水洞最知名的廢墟風咖啡廳與老字號排隊美食。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 5/28 Day 2 -->
+            <section class="relative border-l-2 border-pink-100 pl-8 pb-4">
+                <div class="timeline-dot"></div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">5/28 (四)</span>
+                    <h3 class="text-lg font-bold">樂天樂園 · 回到高中時代</h3>
+                </div>
+                <div class="bg-white day-card p-5 rounded-2xl shadow-md border-b-4 border-yellow-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm font-bold text-yellow-600 bg-yellow-50 px-2 py-1 rounded">🎢 醫美前一天：盡情瘋玩</span>
+                    </div>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-500 mt-1"></i>
+                            <span><b>樂天世界 (Lotte World)</b>：在門口租借韓式高中制服，拍城堡、玩雲霄飛車。</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-500 mt-1"></i>
+                            <span><b>樂天世界塔 (Seoul Sky)</b>：傍晚登塔看夕陽與首爾全夜景。</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 5/29 Day 3 -->
+            <section class="relative border-l-2 border-pink-100 pl-8 pb-4">
+                <div class="timeline-dot"></div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">5/29 (五)</span>
+                    <h3 class="text-lg font-bold">變美日 · 心跳加速的夜晚</h3>
+                </div>
+                <div class="bg-white day-card p-5 rounded-2xl shadow-md border-l-4 border-red-400">
+                    <div class="space-y-6">
+                        <div class="bg-pink-50 p-4 rounded-xl">
+                            <h4 class="font-bold text-pink-600 mb-1"><i class="fa-solid fa-syringe mr-2"></i>AM: 醫美預約</h4>
+                            <p class="text-sm">建議預約：水飛梭、LDM 皮膚管理或小臉肉毒。術後加強保濕，避免劇烈運動。</p>
+                        </div>
+                        <div class="p-2 border-t">
+                            <h4 class="font-bold text-gray-700 mb-1"><i class="fa-solid fa-vest mr-2"></i>PM: 漢南洞慢步</h4>
+                            <p class="text-sm">術後靜態活動，逛精品選物店 Mardi Mercredi、Depound。</p>
+                        </div>
+                        <div class="bg-purple-600 p-4 rounded-xl text-white">
+                            <h4 class="font-bold mb-1"><i class="fa-solid fa-fire mr-2"></i>20:00: Wild Wild 猛男秀</h4>
+                            <p class="text-sm opacity-90">明洞明寶藝術廳。僅限女性！記得提早訂前排座位。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5/30 Day 4 -->
+            <section class="relative border-l-2 border-pink-100 pl-8 pb-4">
+                <div class="timeline-dot"></div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">5/30 (六)</span>
+                    <h3 class="text-lg font-bold text-gray-600">週末休閒 · 汝矣島 The Hyundai</h3>
+                </div>
+                <div class="bg-white day-card p-5 rounded-2xl shadow-md">
+                    <p class="text-gray-700 font-medium">全首爾最美百貨！室內瀑布公園與設計師品牌。</p>
+                    <p class="text-sm text-gray-500 mt-2">傍晚去漢江公園野餐，享受 25 歲的韓式慵懶週末。</p>
+                </div>
+            </section>
+
+            <!-- 5/31 Day 5 -->
+            <section class="relative border-l-2 border-pink-100 pl-8 pb-4">
+                <div class="timeline-dot"></div>
+                <div class="flex items-center gap-3 mb-4">
